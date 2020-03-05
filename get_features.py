@@ -1,0 +1,63 @@
+def get_features(choice):
+    features_list = []
+    if choice == 1:
+        features_list = ['poi',
+                         'salary',
+                         'bonus',
+                         'long_term_incentive',
+                         'deferral_payments',
+                         'expenses',
+                         'restricted_stock_deferred',
+                         'restricted_stock',
+                         'deferred_income',
+                         'total_payments',
+                         'other',
+                         'from_poi_to_this_person',
+                         'from_this_person_to_poi',
+                         'to_messages',
+                         'from_messages',
+                         'shared_receipt_with_poi',
+                         'loan_advances',
+                         'director_fees',
+                         'exercised_stock_options',
+                         'total_stock_value',
+                         'restricted_stock']
+
+    if choice == 2:
+        features_list = ['poi',
+                         'salary',
+                         'bonus',
+                         'long_term_incentive',
+                         'deferral_payments',
+                         'expenses',
+                         'restricted_stock_deferred',
+                         'restricted_stock',
+                         'deferred_income',
+                         'total_payments',
+                         'other',
+                         'from_poi_to_this_person',
+                         'from_this_person_to_poi',
+                         'to_messages',
+                         'from_messages',
+                         'shared_receipt_with_poi',
+                         'loan_advances',
+                         'director_fees',
+                         'exercised_stock_options',
+                         'total_stock_value',
+                         'restricted_stock',
+                         'bonus-to-salary_ratio',
+                         'from_poi_ratio',
+                         'to_poi_ratio']
+    if choice == 3:
+        features_list = ['poi',
+                         'shared_receipt_with_poi',
+                         'to_poi_ratio',
+                         'bonus-to-salary_ratio',
+                         'other',
+                         'restricted_stock',
+                         'expenses',
+                         'from_this_person_to_poi',
+                         'bonus',
+                         'exercised_stock_options']
+
+    return features_list
